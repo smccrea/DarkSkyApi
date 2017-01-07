@@ -130,6 +130,12 @@ namespace DarkSkyApi.Models
         public float MoonPhase { get; set; }
 
         /// <summary>
+        /// Gets or sets the amount of snowfall accumulation expected to occur, in inches.
+        /// </summary>
+        [DataMember(Name = "precipAccumulation")]
+        public float PrecipAccumulation { get; set; }
+	
+	/// <summary>
         /// Gets or sets the average expected precipitation assuming any precipitation occurs.
         /// </summary>
         [DataMember(Name = "precipIntensity")]
